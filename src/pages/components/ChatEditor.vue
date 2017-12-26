@@ -117,9 +117,41 @@ export default {
 					type: 5, // 自定义消息类型为5，此处的消息类型必须和其他平台的图文消息类型一致
 					data: {
 						title: '暖冬季欢乐送', // 消息标题
-						describe: '家具满1000元减100元再返100元现金券！点击查看详情！', // 消息描述
+						link_url: 'https://www.jianshu.com/p/dadd344b6413' // 点击跳转的URL
+					}
+				};
+				this.$store.dispatch('sendMsg', {
+					type: 'custom',
+					scene: this.scene,
+					to: this.to,
+					pushContent: this.pushContent,
+					content: content
+				});
+				return;
+			} else if (this.msgToSent == 'custom1') {
+				let content = {
+					type: 5, // 自定义消息类型为5，此处的消息类型必须和其他平台的图文消息类型一致
+					data: {
+						title: '暖冬季欢乐送', // 消息标题
 						link_url: 'https://www.jianshu.com/p/dadd344b6413', // 点击跳转的URL
 						image_url: 'https://netease.im/res/image/download/section1.png?v=002' // 消息中的图片地址
+					}
+				};
+				this.$store.dispatch('sendMsg', {
+					type: 'custom',
+					scene: this.scene,
+					to: this.to,
+					pushContent: this.pushContent,
+					content: content
+				});
+				return;
+			} else if (this.msgToSent == 'custom2') {
+				let content = {
+					type: 5, // 自定义消息类型为5，此处的消息类型必须和其他平台的图文消息类型一致
+					data: {
+						title: '暖冬季欢乐送', // 消息标题
+						describe: '家具满1000元减100元再返100元现金券！点击查看详情！', // 消息描述
+						link_url: 'https://www.jianshu.com/p/dadd344b6413' // 点击跳转的URL
 					}
 				};
 				this.$store.dispatch('sendMsg', {

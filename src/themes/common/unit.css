@@ -232,10 +232,9 @@
 					-moz-box-orient: vertical;
 					-webkit-box-orient: vertical;
 					padding-left: 10px;
-					padding-top: 5px;
+					padding: 0 5px;
 				}
 				.imgtxt-img {
-					max-height: 160px !important;
 					border-top: 1px #e6e6e6 solid;
 					border-bottom: 1px #e6e6e6 solid;
 					padding: 5px 0;
