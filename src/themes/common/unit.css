@@ -219,7 +219,7 @@
 				flex-direction: column;
 				background-color: #fff;
 				.imgtxt-title {
-					color: #1865b1;
+					color: #333;
 					line-height: 24px;
 					font-size: 14px;
 					font-weight: bold;
@@ -231,17 +231,18 @@
 					-webkit-line-clamp: 1;
 					-moz-box-orient: vertical;
 					-webkit-box-orient: vertical;
-					padding-left: 10px;
-					padding: 0 5px;
+					padding: 5px 15px;
 				}
 				.imgtxt-img {
 					border-top: 1px #e6e6e6 solid;
 					border-bottom: 1px #e6e6e6 solid;
-					padding: 5px 0;
-					margin: 5px;
+					margin: 0 15px;
+					max-width: 100% !important;
+					max-height: 160px !important;
+					vertical-align: bottom;
 				}
 				.imgtxt-describe {
-					color: #1865b1;
+					color: #666;
 					font-size: 12px;
 					text-align: left;
 					word-break: break-all;
@@ -252,7 +253,7 @@
 					-webkit-line-clamp: 3;
 					-moz-box-orient: vertical;
 					-webkit-box-orient: vertical;
-					padding: 5px;
+					padding: 5px 15px;
 				}
 			}
 		}
