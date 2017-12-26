@@ -201,7 +201,6 @@ export default {
 				}
 				// type 5 为图文链接消息
 			} else if (content.type === 5) {
-				item.showText = '图文链接消息';
 				let obj = content.data;
 				item.showText = `<a class="imgtxt" href=${obj.link_url} target="_blank">`;
 				item.showText += `<div class="imgtxt-title">${obj.title}</div>`;
